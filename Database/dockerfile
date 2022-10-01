@@ -1,0 +1,10 @@
+FROM mysql/mysql-server
+ENV MYSQL_ROOT_PASSWORD 5599
+ENV MYSQL_DATABASE mydb
+ENV MYSQL_USER adminor5
+ENV MYSQL_PASSWORD 5599
+ENV LANG en_US.UTF-8
+ENV TZ=Asia/Bangkok
+COPY scriptTestBE.sql /docker-entrypoint-initdb.d/
+
+
